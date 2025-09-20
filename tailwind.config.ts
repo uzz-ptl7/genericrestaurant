@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -47,6 +48,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Custom restaurant colors
+        warm: {
+          orange: "hsl(var(--warm-orange))",
+          red: "hsl(var(--warm-red))",
+        },
+        cream: "hsl(var(--cream))",
+        earth: "hsl(var(--earth-brown))",
+        beige: "hsl(var(--soft-beige))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

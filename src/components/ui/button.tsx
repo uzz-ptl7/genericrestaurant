@@ -15,6 +15,10 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Restaurant-specific variants
+        hero: "bg-gradient-to-r from-primary to-accent text-primary-foreground px-8 py-4 rounded-xl font-semibold shadow-[var(--shadow-warm)] hover:shadow-[var(--shadow-food)] transition-[var(--transition-bounce)] hover:scale-105 active:scale-95 text-base",
+        food: "bg-secondary text-secondary-foreground border-2 border-border hover:bg-primary hover:text-primary-foreground hover:border-primary transition-[var(--transition-smooth)] hover:scale-105 font-semibold",
+        cart: "bg-accent text-accent-foreground shadow-sm hover:bg-accent/90 font-semibold",
       },
       size: {
         default: "h-10 px-4 py-2",
