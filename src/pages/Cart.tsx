@@ -16,7 +16,7 @@ const Cart = () => {
   const [deliveryMethod, setDeliveryMethod] = useState("delivery");
   const [paymentMethod, setPaymentMethod] = useState("cash");
 
-  const deliveryFee = deliveryMethod === "delivery" ? 3.99 : 0;
+  const deliveryFee = deliveryMethod === "delivery" ? 1500 : 0;
   const subtotal = getTotalPrice();
   const total = subtotal + deliveryFee;
 
@@ -32,7 +32,7 @@ const Cart = () => {
 
     toast({
       title: "Order placed!",
-      description: `Your order of $${total.toFixed(2)} has been placed successfully.`,
+      description: `Your order of RWF ${total.toLocaleString()} has been placed successfully.`,
     });
     
     clearCart();
@@ -121,7 +121,7 @@ const Cart = () => {
                       </Button>
                     </div>
                     <div className="text-right">
-                      <p className="font-semibold">${(item.price * item.quantity).toFixed(2)}</p>
+                      <p className="font-semibold">RWF {(item.price * item.quantity).toLocaleString()}</p>
                       <Button
                         variant="ghost"
                         size="sm"
@@ -148,7 +148,7 @@ const Cart = () => {
                 <RadioGroup value={deliveryMethod} onValueChange={setDeliveryMethod}>
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="delivery" id="delivery" />
-                    <Label htmlFor="delivery">Delivery (+$3.99)</Label>
+                    <Label htmlFor="delivery">Delivery (+RWF 1,500)</Label>
                   </div>
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="pickup" id="pickup" />
@@ -185,16 +185,16 @@ const Cart = () => {
               <CardContent className="space-y-4">
                 <div className="flex justify-between">
                   <span>Subtotal</span>
-                  <span>${subtotal.toFixed(2)}</span>
+                  <span>RWF {subtotal.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Delivery Fee</span>
-                  <span>${deliveryFee.toFixed(2)}</span>
+                  <span>RWF {deliveryFee.toLocaleString()}</span>
                 </div>
                 <Separator />
                 <div className="flex justify-between font-semibold text-lg">
                   <span>Total</span>
-                  <span>${total.toFixed(2)}</span>
+                  <span>RWF {total.toLocaleString()}</span>
                 </div>
                 
                 <Button

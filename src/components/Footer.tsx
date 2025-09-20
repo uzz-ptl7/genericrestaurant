@@ -9,12 +9,12 @@ const Footer = () => {
           {/* Restaurant Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-full"></div>
-              <span className="text-xl font-bold">Restaurant</span>
+              <div className="w-8 h-8 rwanda-flag-gradient rounded-full"></div>
+              <span className="text-xl font-bold">Kigali Kitchen</span>
             </div>
             <p className="text-background/80 text-sm leading-relaxed">
-              Experience exceptional cuisine crafted with the finest ingredients and served with passion.
-              Your neighborhood destination for unforgettable dining.
+              Authentic Rwandan cuisine crafted with traditional recipes and the finest local ingredients from the land of a thousand hills.
+              Your destination for unforgettable traditional dining in Kigali.
             </p>
           </div>
 
@@ -51,15 +51,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-background/80">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span className="text-sm">123 Restaurant St, Food City</span>
+                <span className="text-sm">KN 4 Ave, Kigali, Rwanda</span>
               </li>
               <li className="flex items-center gap-2 text-background/80">
                 <Phone className="h-4 w-4 text-primary" />
-                <span className="text-sm">(555) 123-4567</span>
+                <span className="text-sm">+250 788 123 456</span>
               </li>
               <li className="flex items-center gap-2 text-background/80">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-sm">info@restaurant.com</span>
+                <span className="text-sm">hello@kigalikitchen.rw</span>
               </li>
             </ul>
           </div>
@@ -72,7 +72,7 @@ const Footer = () => {
                 <Clock className="h-4 w-4 text-primary" />
                 <div className="text-sm">
                   <p>Mon - Sun</p>
-                  <p>11:00 AM - 10:00 PM</p>
+                  <p>9:00 AM - 10:00 PM</p>
                 </div>
               </div>
             </div>
@@ -94,9 +94,20 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-background/20 mt-8 pt-8 text-center">
+        <div className="border-t border-background/20 mt-8 pt-8 text-center space-y-2">
           <p className="text-background/60 text-sm">
-            © 2024 Restaurant. All rights reserved. Made with ❤️ for great food lovers.
+            © 2025 Kigali Kitchen. All rights reserved.
+          </p>
+          <p className="text-gray-400 text-sm">
+            Made with ❤️ in Rwanda by the{" "}
+            <a 
+              href="https://www.sitecraftersz.co/" 
+              className="underline hover:text-white transition-colors duration-500" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Sitecrafters Team
+            </a>
           </p>
         </div>
       </div>

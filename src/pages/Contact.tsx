@@ -11,9 +11,9 @@ const Contact = () => {
       {/* Header */}
       <section className="bg-gradient-to-r from-primary/10 to-accent/10 py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
+          <h1 className="text-5xl font-bold mb-4">Contact Kigali Kitchen</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Get in touch with us for reservations, questions, or feedback. We'd love to hear from you!
+            Get in touch with us for orders, questions, or feedback about our authentic Rwandan cuisine. We're here to serve you the best traditional dishes!
           </p>
         </div>
       </section>
@@ -25,8 +25,8 @@ const Contact = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
               <p className="text-lg text-muted-foreground mb-8">
-                We're here to help! Whether you have questions about our menu, want to make a reservation, 
-                or simply want to share your feedback, don't hesitate to reach out.
+                We're here to help! Whether you have questions about our traditional Rwandan dishes, want to place an order, 
+                or simply want to share your feedback about our authentic cuisine, don't hesitate to reach out.
               </p>
             </div>
 
@@ -39,7 +39,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold">Phone</h3>
-                      <p className="text-muted-foreground">(555) 123-4567</p>
+                      <p className="text-muted-foreground">+250 788 123 456</p>
                     </div>
                   </div>
                 </CardContent>
@@ -53,7 +53,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold">Email</h3>
-                      <p className="text-muted-foreground">info@restaurant.com</p>
+                      <p className="text-muted-foreground">hello@kigalikitchen.rw</p>
                     </div>
                   </div>
                 </CardContent>
@@ -67,7 +67,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold">Address</h3>
-                      <p className="text-muted-foreground">123 Restaurant St<br />Food City, FC 12345</p>
+                      <p className="text-muted-foreground">KN 4 Ave, Kigali<br />Kigali City, Rwanda</p>
                     </div>
                   </div>
                 </CardContent>
@@ -81,7 +81,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold">Hours</h3>
-                      <p className="text-muted-foreground">Mon-Sun<br />11:00 AM - 10:00 PM</p>
+                      <p className="text-muted-foreground">Mon-Sun<br />9:00 AM - 10:00 PM</p>
                     </div>
                   </div>
                 </CardContent>
@@ -144,7 +144,7 @@ const Contact = () => {
               <div className="text-center">
                 <MapPin className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                 <p className="text-muted-foreground">Interactive map would go here</p>
-                <p className="text-sm text-muted-foreground">123 Restaurant St, Food City, FC 12345</p>
+                <p className="text-sm text-muted-foreground">KN 4 Ave, Kigali, Rwanda</p>
               </div>
             </div>
           </CardContent>
