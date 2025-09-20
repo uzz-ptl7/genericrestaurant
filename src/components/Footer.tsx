@@ -9,12 +9,12 @@ const Footer = () => {
           {/* Restaurant Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 rwanda-flag-gradient rounded-full"></div>
-              <span className="text-xl font-bold">Kigali Kitchen</span>
+              <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-full"></div>
+              <span className="text-xl font-bold">Restaurant</span>
             </div>
             <p className="text-background/80 text-sm leading-relaxed">
-              Authentic Rwandan cuisine crafted with traditional recipes and the finest local ingredients from the land of a thousand hills.
-              Your destination for unforgettable traditional dining in Kigali.
+              Experience exceptional cuisine crafted with the finest ingredients and served with passion.
+              Your neighborhood destination for unforgettable dining in Kigali.
             </p>
           </div>
 
@@ -59,7 +59,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-background/80">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-sm">hello@kigalikitchen.rw</span>
+                <span className="text-sm">info@restaurant.rw</span>
               </li>
             </ul>
           </div>
@@ -96,7 +96,7 @@ const Footer = () => {
 
         <div className="border-t border-background/20 mt-8 pt-8 text-center space-y-2">
           <p className="text-background/60 text-sm">
-            © 2025 Kigali Kitchen. All rights reserved.
+            © 2025 Restaurant. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm">
             Made with ❤️ in Rwanda by the{" "}

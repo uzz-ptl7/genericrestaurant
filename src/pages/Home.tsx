@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Clock, MapPin, Phone } from "lucide-react";
-import rwandanHero from "@/assets/rwandan-hero.jpg";
+import heroImage from "@/assets/hero-dish.jpg";
 import FoodCard from "@/components/FoodCard";
 import { menuItems } from "@/data/menuData";
 
@@ -18,8 +18,8 @@ const Home = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Restaurant",
-            "name": "Kigali Kitchen",
-            "description": "Authentic Rwandan cuisine in the heart of Kigali. Traditional dishes like Inyama n'Ubwoba, Ugali, and Ikivuguto delivered fresh to your door.",
+            "name": "Restaurant",
+            "description": "Experience exceptional cuisine crafted with the finest ingredients and served with passion in Kigali, Rwanda.",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Kigali",
@@ -27,8 +27,8 @@ const Home = () => {
               "streetAddress": "KN 4 Ave, Kigali"
             },
             "telephone": "+250788123456",
-            "servesCuisine": "Rwandan",
-            "priceRange": "RWF 2000-20000",
+            "servesCuisine": "International",
+            "priceRange": "$10-30",
             "openingHours": "Mo-Su 09:00-22:00"
           }),
         }}
@@ -38,17 +38,17 @@ const Home = () => {
       <section className="hero-section min-h-[70vh] flex items-center justify-center relative">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${rwandanHero})` }}
+          style={{ backgroundImage: `url(${heroImage})` }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60"></div>
         </div>
         
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-            Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-glow to-accent">Kigali Kitchen</span>
+            Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-glow to-accent">Restaurant</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Authentic Rwandan cuisine crafted with traditional recipes and the finest local ingredients from the land of a thousand hills.
+            Experience exceptional cuisine crafted with the finest ingredients and served with passion.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -73,24 +73,24 @@ const Home = () => {
             <Card className="text-center">
               <CardContent className="p-6">
                 <Star className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Authentic Rwandan Flavors</h3>
-                <p className="text-muted-foreground">Traditional recipes passed down through generations, using local Rwandan ingredients</p>
+                <h3 className="text-xl font-semibold mb-2">Premium Quality</h3>
+                <p className="text-muted-foreground">Fresh ingredients, expertly prepared by our skilled chefs</p>
               </CardContent>
             </Card>
             
             <Card className="text-center">
               <CardContent className="p-6">
                 <Clock className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Fast Delivery in Kigali</h3>
-                <p className="text-muted-foreground">Quick preparation and delivery throughout Kigali city and surrounding areas</p>
+                <h3 className="text-xl font-semibold mb-2">Fast Delivery</h3>
+                <p className="text-muted-foreground">Quick preparation and delivery to your doorstep in Kigali</p>
               </CardContent>
             </Card>
             
             <Card className="text-center">
               <CardContent className="p-6">
                 <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Local & Fresh</h3>
-                <p className="text-muted-foreground">Supporting local farmers and using the freshest ingredients from Rwanda</p>
+                <h3 className="text-xl font-semibold mb-2">Multiple Locations</h3>
+                <p className="text-muted-foreground">Convenient pickup locations across Kigali</p>
               </CardContent>
             </Card>
           </div>
@@ -101,9 +101,9 @@ const Home = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Popular Rwandan Dishes</h2>
+            <h2 className="text-4xl font-bold mb-4">Popular Dishes</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Discover our customers' favorite traditional Rwandan dishes, prepared with authentic recipes and served with love.
+              Discover our customers' favorite dishes, crafted with care and bursting with flavor.
             </p>
           </div>
           
@@ -127,11 +127,11 @@ const Home = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">About Kigali Kitchen</h2>
+            <h2 className="text-4xl font-bold mb-6">About Restaurant</h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              At Kigali Kitchen, we celebrate the rich culinary heritage of Rwanda. Our passionate chefs prepare traditional 
-              dishes like Inyama n'Ubwoba, authentic Ugali, and refreshing Ikivuguto using time-honored recipes and the finest 
-              local ingredients. Experience the true taste of Rwanda, delivered fresh to your door.
+              At Restaurant, we believe that great food brings people together. Our passionate chefs use only the 
+              freshest ingredients to create dishes that celebrate flavor, quality, and tradition. Every meal is 
+              prepared with love and attention to detail, ensuring that your dining experience is nothing short of exceptional.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">

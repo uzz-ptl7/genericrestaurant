@@ -45,7 +45,7 @@ const FoodCard = ({ id, name, price, image, description, category }: FoodCardPro
         <div className="space-y-2">
           <div className="flex justify-between items-start">
             <h3 className="font-semibold text-lg text-foreground line-clamp-1">{name}</h3>
-            <span className="text-lg font-bold text-primary">RWF {price.toLocaleString()}</span>
+            <span className="text-lg font-bold text-primary">${price.toFixed(2)}</span>
           </div>
           
           {description && (

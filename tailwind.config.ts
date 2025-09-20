@@ -48,12 +48,7 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Custom restaurant colors - Rwandan theme
-        rwanda: {
-          blue: "hsl(var(--rwandan-blue))",
-          yellow: "hsl(var(--rwandan-yellow))",
-          green: "hsl(var(--rwandan-green))",
-        },
+        // Custom restaurant colors
         warm: {
           orange: "hsl(var(--warm-orange))",
           red: "hsl(var(--warm-red))",

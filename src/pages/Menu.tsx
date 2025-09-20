@@ -38,9 +38,9 @@ const Menu = () => {
       {/* Header */}
       <section className="bg-gradient-to-r from-primary/10 to-accent/10 py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">Authentic Rwandan Menu</h1>
+          <h1 className="text-5xl font-bold mb-4">Our Menu</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Explore our carefully crafted traditional Rwandan dishes, made with local ingredients and prepared with authentic recipes passed down through generations.
+            Explore our carefully crafted dishes, made with the finest ingredients and prepared with passion.
           </p>
         </div>
       </section>

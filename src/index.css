@@ -37,10 +37,7 @@
 
     --radius: 0.75rem;
 
-    /* Custom restaurant theme colors - Rwandan inspired */
-    --rwandan-blue: 207 85% 40%;
-    --rwandan-yellow: 48 95% 65%;
-    --rwandan-green: 120 65% 45%;
+    /* Custom restaurant theme colors */
     --warm-orange: 25 95% 53%;
     --warm-orange-light: 35 95% 65%;
     --warm-red: 15 85% 60%;
@@ -48,24 +45,15 @@
     --earth-brown: 25 15% 15%;
     --soft-beige: 35 15% 94%;
 
-    /* Primary colors using Rwandan theme */
-    --primary: 207 85% 40%; /* Rwandan blue */
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 48 95% 65%; /* Rwandan yellow */
+    /* Gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(var(--warm-orange)), hsl(var(--warm-red)));
+    --gradient-food: linear-gradient(180deg, hsl(var(--warm-orange) / 0.1), hsl(var(--warm-red) / 0.1));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--warm-orange) / 0.95), hsl(var(--warm-red) / 0.95));
 
-    --accent: 120 65% 45%; /* Rwandan green */
-    --accent-foreground: 0 0% 100%;
-
-    /* Gradients with Rwandan colors */
-    --gradient-warm: linear-gradient(135deg, hsl(var(--rwandan-blue)), hsl(var(--rwandan-green)));
-    --gradient-food: linear-gradient(180deg, hsl(var(--rwandan-blue) / 0.1), hsl(var(--rwandan-green) / 0.1));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--rwandan-blue) / 0.95), hsl(var(--rwandan-green) / 0.85));
-    --gradient-rwanda: linear-gradient(135deg, hsl(var(--rwandan-blue)), hsl(var(--rwandan-yellow)), hsl(var(--rwandan-green)));
-
-    /* Shadows with Rwandan colors */
-    --shadow-warm: 0 10px 30px -10px hsl(var(--rwandan-blue) / 0.3);
+    /* Shadows */
+    --shadow-warm: 0 10px 30px -10px hsl(var(--warm-orange) / 0.3);
     --shadow-card: 0 4px 20px -4px hsl(var(--earth-brown) / 0.1);
-    --shadow-food: 0 8px 30px -8px hsl(var(--rwandan-blue) / 0.2);
+    --shadow-food: 0 8px 30px -8px hsl(var(--warm-orange) / 0.2);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -177,9 +165,5 @@
   
   .category-tab.active {
     @apply bg-primary text-primary-foreground border-primary shadow-[var(--shadow-warm)];
-  }
-
-  .rwanda-flag-gradient {
-    @apply bg-gradient-to-r from-primary via-primary-glow to-accent;
   }
 }
