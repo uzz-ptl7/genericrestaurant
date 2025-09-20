@@ -94,12 +94,12 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-background/20 mt-8 pt-8 text-center space-y-2">
+        <div className="flex justify-between lg:flex-row flex-col border-t border-background/20 mt-8 pt-8 text-center space-y-2">
           <p className="text-background/60 text-sm">
             © 2025 Restaurant. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm">
-            Made with ❤️ in Rwanda by the{" "}
+            Made in Rwanda by the{" "}
             <a 
               href="https://www.sitecraftersz.co/" 
               className="underline hover:text-white transition-colors duration-500" 
